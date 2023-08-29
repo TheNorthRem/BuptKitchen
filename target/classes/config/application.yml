@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/buptkitchen
+    username: root
+    password: 137100
+  servlet:
+    multipart: #设置上传文件大小
+      enabled: true
+      max-file-size: 5MB #设置单个文件的大小
+      max-request-size: 5MB #设置单次请求的文件的总大小
+WechatSetting:
+  AppID: wx3cef1f1ce2ef7f65
+  AppSecret: d4a1c65ed1d09956067b4353283c46aa
+
+
